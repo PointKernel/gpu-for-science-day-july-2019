@@ -50,6 +50,7 @@ module use /usr/common/software/gpu4sci-jul-2019/modulefiles
 ### Get GPU node
 
 ```bash
+module purge && module load esslurm
 salloc -A gpu4sci -C gpu -N 1 -t 04:00:00 -c 10 --gres=gpu:1
 ```
 
